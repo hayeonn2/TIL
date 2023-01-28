@@ -1,4 +1,4 @@
-# git-practice
+# 🔖 git-practice
 ### 다양한 작업을 하는 공간
 - 프로젝트 마크업
 - Git 탐색하기
