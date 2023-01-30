@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section class="product_nav">
+      <h2 class="title">베스트</h2>
+
+      <nav class="navigator">
+        <div>
+          <h3 class="filter">필터</h3>
+          <button class="reset_btn">초기화</button>
+        </div>
+
+        <div class="nav_container">
+          <ul class="category_wrapper">
+            <li>
+              <button class="toggle_btn">
+                <span class="category">카테고리</span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 11L9 7L13 11"
+                    stroke="#999999"
+                    stroke-width="1.2"
+                  />
+                </svg>
+              </button>
+
+              <ul class="category_list_wrapper">
+                <li class="category_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">샐러드/간편식</span>
+                    <span class="list_counter">68</span>
+                  </a>
+                </li>
+
+                <li class="category_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">국/반찬/메인요리</span>
+                    <span class="list_counter">46</span>
+                  </a>
+                </li>
+
+                <li class="category_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">정육/계란</span>
+                    <span class="list_counter">39</span>
+                  </a>
+                </li>
+
+                <li class="category_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">과일/견과/쌀</span>
+                    <span class="list_counter">27</span>
+                  </a>
+                </li>
+
+                <li class="category_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">간식/과자/떡</span>
+                    <span class="list_counter">17</span>
+                  </a>
+                </li>
+
+                <li class="category_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">생수/음료/우유/커피</span>
+                    <span class="list_counter">16</span>
+                  </a>
+                </li>
+
+                <li class="category_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">수산/해산/건어물</span>
+                    <span class="list_counter">16</span>
+                  </a>
+                </li>
+
+                <li class="category_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">베이커리/치즈/델리</span>
+                    <span class="list_counter">14</span>
+                  </a>
+                </li>
+
+                <li class="category_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">건강식품</span>
+                    <span class="list_counter">9</span>
+                  </a>
+                </li>
+
+                <li class="category_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">생활용품/리빙/캠핑</span>
+                    <span class="list_counter">9</span>
+                  </a>
+                </li>
+
+                <li class="more_btn_list">
+                  <button class="more_btn">
+                    <span>카테고리 더보기</span>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 11L9 7L13 11"
+                        stroke="#999999"
+                        stroke-width="1.2"
+                      />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- category-list-wrapper end -->
+
+          <ul class="brand_wrapper">
+            <li>
+              <button class="toggle_btn">
+                <span class="category">브랜드</span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 11L9 7L13 11"
+                    stroke="#999999"
+                    stroke-width="1.2"
+                  />
+                </svg>
+              </button>
+
+              <ul class="brand_list_wrapper">
+                <li class="brand_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">KF365</span>
+                    <span class="list_counter">27</span>
+                  </a>
+                </li>
+
+                <li class="brand_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">풀무원</span>
+                    <span class="list_counter">6</span>
+                  </a>
+                </li>
+
+                <li class="brand_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">햇반</span>
+                    <span class="list_counter">6</span>
+                  </a>
+                </li>
+
+                <li class="brand_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">Karly's</span>
+                    <span class="list_counter">6</span>
+                  </a>
+                </li>
+
+                <li class="brand_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">이연복의 목란</span>
+                    <span class="list_counter">4</span>
+                  </a>
+                </li>
+
+                <li class="brand_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">고래사</span>
+                    <span class="list_counter">1</span>
+                  </a>
+                </li>
+
+                <li class="brand_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">교토마블</span>
+                    <span class="list_counter">1</span>
+                  </a>
+                </li>
+
+                <li class="brand_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">베이커리/치즈/델리</span>
+                    <span class="list_counter">14</span>
+                  </a>
+                </li>
+
+                <li class="brand_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">건강식품</span>
+                    <span class="list_counter">9</span>
+                  </a>
+                </li>
+
+                <li class="brand_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">그래놀라 하우스</span>
+                    <span class="list_counter">1</span>
+                  </a>
+                </li>
+
+                <li class="more_btn_list">
+                  <button class="more_btn">
+                    <span>브랜드 더보기</span>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 11L9 7L13 11"
+                        stroke="#999999"
+                        stroke-width="1.2"
+                      />
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- brand-list-wrapper end -->
+
+          <ul class="price_wrapper">
+            <li>
+              <button class="toggle_btn">
+                <span class="category">가격</span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 11L9 7L13 11"
+                    stroke="#999999"
+                    stroke-width="1.2"
+                  />
+                </svg>
+              </button>
+
+              <ul class="price_list_wrapper">
+                <li class="price_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">7,345원 미만</span>
+                    <span class="list_counter">69</span>
+                  </a>
+                </li>
+
+                <li class="price_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">7,345원 ~ 10,760원</span>
+                    <span class="list_counter">70</span>
+                  </a>
+                </li>
+
+                <li class="price_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">10,760원 ~ 18,300원</span>
+                    <span class="list_counter">70</span>
+                  </a>
+                </li>
+
+                <li class="price_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">18,300원 이상</span>
+                    <span class="list_counter">71</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- price-list-wrapper end -->
+
+          <ul class="type_wrapper">
+            <li>
+              <button class="toggle_btn">
+                <span class="category">유형</span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 11L9 7L13 11"
+                    stroke="#999999"
+                    stroke-width="1.2"
+                  />
+                </svg>
+              </button>
+
+              <ul class="type_list_wrapper">
+                <li class="type_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">Karly Only</span>
+                    <span class="list_counter">122</span>
+                  </a>
+                </li>
+
+                <li class="type_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">희소가치 프로젝트</span>
+                    <span class="list_counter">6</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- type-list-wrapper end -->
+
+          <ul class="except_wrapper">
+            <li>
+              <button class="toggle_btn">
+                <span class="category">특정상품 제외</span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 11L9 7L13 11"
+                    stroke="#999999"
+                    stroke-width="1.2"
+                  />
+                </svg>
+              </button>
+
+              <ul class="except_list_wrapper">
+                <li class="except_list">
+                  <a href="#">
+                    <button class="check_btn">선택하기</button>
+                    <span class="list_title">반려동물 상품</span>
+                    <span class="list_counter">2</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- except-list-wrapper end -->
+        </div>
+      </nav>
+    </section>
+
+    <section class="product_list">
+      <div class="tab_menu">
+        <h4 class="total"></h4>
+
+        <ul class="order_list">
+          <li class="recommendation">
+            <a href="#">추천순</a>
+
+            <div class="des_icon">
+              <svg
+                width="14"
+                height="20"
+                viewBox="0 0 14 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.9932 3.7002C8.73506 3.7002 10.3116 4.40557 11.4528 5.54565C12.5943 6.68594 13.3002 8.26111 13.3002 10.0002C13.3002 11.7393 12.5943 13.3145 11.4528 14.4547C10.3116 15.5948 8.73506 16.3002 6.9932 16.3002C5.25512 16.3002 3.68233 15.595 2.54387 14.4554C1.40457 13.315 0.700195 11.7395 0.700195 10.0002C0.700195 8.26087 1.40457 6.68541 2.54387 5.54497C3.68233 4.40537 5.25512 3.7002 6.9932 3.7002Z"
+                  stroke="#CCCCCC"
+                  stroke-width="1.4"
+                />
+                <path
+                  d="M4.5 8.21081H5.77027C5.81351 7.55135 6.26216 7.12973 6.95946 7.12973C7.64054 7.12973 8.09459 7.53514 8.09459 8.0973C8.09459 8.58784 7.90383 8.86944 7.35576 9.22524L7.1973 9.32432C6.45135 9.76216 6.13784 10.2486 6.18649 11.0595L6.19189 11.427H7.44595V11.1189C7.44595 10.5838 7.64595 10.3081 8.35405 9.89189C9.08919 9.45405 9.5 8.87568 9.5 8.04865C9.5 6.85405 8.51081 6 7.02973 6C5.42432 6 4.54324 6.92973 4.5 8.21081ZM6.87838 14.0054C6.33784 14.0054 5.98108 13.6649 5.98108 13.1459C5.98108 12.6216 6.33784 12.2811 6.87838 12.2811C7.42973 12.2811 7.77568 12.6216 7.77568 13.1459C7.77568 13.6649 7.42973 14.0054 6.87838 14.0054Z"
+                  fill="#CCCCCC"
+                />
+              </svg>
+              <p class="description">
+                소비자 인기도(판매량, 판매금액, 조회수 등), 상품 출시일, 수요
+                적합성, 상품 운영상 필요 등을 종합적으로 고려한 순서입니다.
+              </p>
+            </div>
+          </li>
+
+          <li class="new"><a href="#">신상품순</a></li>
+          <li class="sales_rate"><a href="#">판매량순</a></li>
+          <li class="benefits"><a href="#">혜택순</a></li>
+          <li class="low_price"><a href="#">낮은 가격순</a></li>
+          <li class="high_price"><a href="#">높은 가격순</a></li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
