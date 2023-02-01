@@ -15,6 +15,7 @@ h2.title {
   width: 267px;
   padding-right: 47px;
   /* height: 960px; */
+  /* position: static; */
 }
 
 .filter_menu {
@@ -44,6 +45,7 @@ button.toggle_btn {
   font-weight: 600;
   text-align: left;
   border-bottom: 1px solid var(--gray-100);
+  transition: 0.4s;
 }
 
 .category_list,
@@ -52,6 +54,19 @@ button.toggle_btn {
 .type_list,
 .except_list {
   padding: 16px 0;
+}
+
+.list_wrapper {
+  /* background-color: red; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.active {
+  /* max-height: 300px; */
+  /* display: block; */
+  /* background-color: skyblue; */
 }
 
 .category_list a,
