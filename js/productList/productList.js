@@ -23,18 +23,19 @@ import { getNode, getNodes } from "../../lib/dom/getNode.js";
 // }
 
 // const container = document.querySelectorAll(".top_menu");
-const container = getNodes(".top_menu");
+const categoryTitle = getNodes(".top_menu");
 
-let panel = document.querySelectorAll(".list_wrapper");
+const categoryList = getNodes(".list_wrapper");
+const img = getNodes(".toggle_btn > svg");
 
-for (let i = 0; i < container.length; i++) {
-  container[i].addEventListener("click", function () {
-    panel[i].classList.toggle("active");
+for (let i = 0; i < categoryTitle.length; i++) {
+  categoryTitle[i].addEventListener("click", function () {
+    img[i].classList.toggle("active");
 
-    if (panel[i].style.maxHeight) {
-      panel[i].style.maxHeight = null;
+    if (categoryList[i].style.maxHeight) {
+      categoryList[i].style.maxHeight = null;
     } else {
-      panel[i].style.maxHeight = panel[i].scrollHeight + "px";
+      categoryList[i].style.maxHeight = categoryList[i].scrollHeight + "px";
     }
   });
 }
