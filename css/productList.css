@@ -91,6 +91,10 @@ button.toggle_btn {
   text-indent: -9999px;
 }
 
+.none_btn {
+  background: url(../assets/icons/list/checked.svg) no-repeat;
+}
+
 .list_title {
   margin-left: 10px;
 }
