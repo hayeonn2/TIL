@@ -191,12 +191,14 @@ button.toggle_btn {
   width: 100%;
 }
 
-.cart_icon img {
+/* 카트 아이콘 버튼 잡히도록 다시 설정 */
+.cart_icon {
   position: absolute;
   width: 45px;
   height: 45px;
   bottom: 17px;
   right: 15px;
+  border-radius: 100%;
 }
 
 .product_delivery {
