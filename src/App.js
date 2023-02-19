@@ -12,7 +12,7 @@ function App() {
   };
   return (
     <>
-      <Hello name="react" />
+      <Hello name="react" color="pink" />
       <div style={style}>{name}</div>
       <div className="gray-box"></div>
     </>
