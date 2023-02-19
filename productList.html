@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/productList.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/main.js" type="module"></script>
+    <script defer src="./js/productList/productList.js" type="module"></script>
     <title>마켓칼리</title>
   </head>
 
@@ -318,7 +318,7 @@
           </div>
 
           <div class="nav_container">
-            <ul class="category_wrapper">
+            <ul class="top_menu">
               <li>
                 <button class="toggle_btn">
                   <span class="category_title">카테고리</span>
@@ -337,7 +337,7 @@
                   </svg>
                 </button>
 
-                <ul class="category_list_wrapper">
+                <ul class="list_wrapper">
                   <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
@@ -441,7 +441,7 @@
             </ul>
             <!-- category-list-wrapper end -->
 
-            <ul class="brand_wrapper">
+            <ul class="top_menu">
               <li>
                 <button class="toggle_btn">
                   <span class="category_title">브랜드</span>
@@ -460,8 +460,8 @@
                   </svg>
                 </button>
 
-                <ul class="brand_list_wrapper">
-                  <li class="brand_list">
+                <ul class="list_wrapper">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">KF365</span>
@@ -469,7 +469,7 @@
                     </a>
                   </li>
 
-                  <li class="brand_list">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">풀무원</span>
@@ -477,7 +477,7 @@
                     </a>
                   </li>
 
-                  <li class="brand_list">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">햇반</span>
@@ -485,7 +485,7 @@
                     </a>
                   </li>
 
-                  <li class="brand_list">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">Karly's</span>
@@ -493,7 +493,7 @@
                     </a>
                   </li>
 
-                  <li class="brand_list">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">이연복의 목란</span>
@@ -501,7 +501,7 @@
                     </a>
                   </li>
 
-                  <li class="brand_list">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">고래사</span>
@@ -509,7 +509,7 @@
                     </a>
                   </li>
 
-                  <li class="brand_list">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">교토마블</span>
@@ -517,7 +517,7 @@
                     </a>
                   </li>
 
-                  <li class="brand_list">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">베이커리/치즈/델리</span>
@@ -525,7 +525,7 @@
                     </a>
                   </li>
 
-                  <li class="brand_list">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">건강식품</span>
@@ -533,7 +533,7 @@
                     </a>
                   </li>
 
-                  <li class="brand_list">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">그래놀라 하우스</span>
@@ -564,7 +564,7 @@
             </ul>
             <!-- brand-list-wrapper end -->
 
-            <ul class="price_wrapper">
+            <ul class="top_menu">
               <li>
                 <button class="toggle_btn">
                   <span class="category_title">가격</span>
@@ -583,8 +583,8 @@
                   </svg>
                 </button>
 
-                <ul class="price_list_wrapper">
-                  <li class="price_list">
+                <ul class="list_wrapper">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">7,345원 미만</span>
@@ -592,7 +592,7 @@
                     </a>
                   </li>
 
-                  <li class="price_list">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">7,345원 ~ 10,760원</span>
@@ -600,7 +600,7 @@
                     </a>
                   </li>
 
-                  <li class="price_list">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">10,760원 ~ 18,300원</span>
@@ -608,7 +608,7 @@
                     </a>
                   </li>
 
-                  <li class="price_list">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">18,300원 이상</span>
@@ -620,7 +620,7 @@
             </ul>
             <!-- price-list-wrapper end -->
 
-            <ul class="type_wrapper">
+            <ul class="top_menu">
               <li>
                 <button class="toggle_btn">
                   <span class="category_title">유형</span>
@@ -639,8 +639,8 @@
                   </svg>
                 </button>
 
-                <ul class="type_list_wrapper">
-                  <li class="type_list">
+                <ul class="list_wrapper">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">Karly Only</span>
@@ -648,7 +648,7 @@
                     </a>
                   </li>
 
-                  <li class="type_list">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">희소가치 프로젝트</span>
@@ -660,7 +660,7 @@
             </ul>
             <!-- type-list-wrapper end -->
 
-            <ul class="except_wrapper">
+            <ul class="top_menu">
               <li>
                 <button class="toggle_btn">
                   <span class="category_title">특정상품 제외</span>
@@ -679,8 +679,8 @@
                   </svg>
                 </button>
 
-                <ul class="except_list_wrapper">
-                  <li class="except_list">
+                <ul class="list_wrapper">
+                  <li class="category_list">
                     <a href="#">
                       <button class="check_btn">선택하기</button>
                       <span class="list_title">반려동물 상품</span>
