@@ -2,11 +2,12 @@ import React from "react";
 import Hello from "./Hello";
 
 function App() {
+  const name = "hayeon";
+
   return (
     <>
       <Hello />
-      <Hello />
-      <Hello />
+      <div>{name}</div>
     </>
   );
 }
