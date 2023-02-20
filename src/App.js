@@ -13,10 +13,8 @@ function App() {
   };
   return (
     <Wrapper>
-      <Hello name="react" color="pink" />
+      <Hello name="react" color="pink" isSpecial={true} />
       <Hello color="pink" />
-      <div style={style}>{name}</div>
-      <div className="gray-box"></div>
     </Wrapper>
   );
 }
