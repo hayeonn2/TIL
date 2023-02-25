@@ -1,5 +1,5 @@
 import classes from "./App.module.css";
-import { Button } from "./components";
+import { Button, A11yHidden } from "./components";
 
 function App() {
   return (
@@ -8,7 +8,8 @@ function App() {
       <div role="group" className={classes.buttonGroup}>
         <Button>회원가입</Button>
         <Button secondary>로그인</Button>
-        <Button disabled>저장</Button>
+        <A11yHidden as="h2">저장</A11yHidden>
+        <A11yHidden as="figcaption">저장</A11yHidden>
       </div>
     </div>
   );
