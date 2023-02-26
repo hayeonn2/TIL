@@ -1,4 +1,5 @@
-import classes from "./Nav.module.css";
+import { arrayOf, string, oneOf, exact, shape } from "prop-types";
+import classes from "./Nav.module.scss";
 import { A11yHidden } from "@/components";
 
 export function Nav({ as, headline, list, ...restProps }) {
@@ -16,8 +17,18 @@ export function Nav({ as, headline, list, ...restProps }) {
 }
 
 Nav.defaultProps = {
-  list: [],
+  //list: [],
   as: "h2",
 };
 
-Nav.propType = {};
+Nav.propType = {
+  list: arrayOf(
+    exact({
+      id: string,
+      to: string,
+      text: string,
+    })
+  ).isRequired,
+  headline: string.isRequired,
+  as: oneOf(["h2", "h3", "h4", "h5", "h6"]),
+};
