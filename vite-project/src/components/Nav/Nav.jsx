@@ -3,17 +3,18 @@ import classes from "./Nav.module.scss";
 import { A11yHidden } from "@/components";
 
 export function Nav({ as, headline, list, ...restProps }) {
-  <nav>
-    <A11yHidden as={as}>{headline}</A11yHidden>
-
-    <ul>
-      {list.map((item) => {
-        <li key={item.id}>
-          <a href={item.to}>{item.text}</a>
-        </li>;
-      })}
-    </ul>
-  </nav>;
+  return (
+    <nav {...restProps}>
+      <A11yHidden as={as}>{headline}</A11yHidden>
+      <ul>
+        {list.map((item) => (
+          <li key={item.id}>
+            <a href={item.to}>{item.text}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 }
 
 Nav.defaultProps = {
@@ -21,9 +22,9 @@ Nav.defaultProps = {
   as: "h2",
 };
 
-Nav.propType = {
+Nav.propTypes = {
   list: arrayOf(
-    exact({
+    shape({
       id: string,
       to: string,
       text: string,
