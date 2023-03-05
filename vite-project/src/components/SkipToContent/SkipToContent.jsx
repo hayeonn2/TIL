@@ -8,12 +8,10 @@ export function SkipToContent({ to, ...restProps }) {
 
   // 사이드 이펙트 (명령형 프로그래밍)
   useEffect(() => {
-    if (targetElement) {
-      targetElement = document.querySelector(to);
+    targetElement = document.querySelector(to); // null
 
-      if (targetElement) {
-        targetElement.setAttribute("tabindex", -1);
-      }
+    if (targetElement) {
+      targetElement.setAttribute("tabindex", -1);
 
       // 이벤트 핸들링
       // 리액트의 방식 (useRef)
@@ -24,7 +22,7 @@ export function SkipToContent({ to, ...restProps }) {
         targetElement && targetElement.focus();
       });
     }
-  });
+  }, []);
 
   /* const handleJumpToArea = (e) => {
     e.preventDefault();
